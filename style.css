@@ -1,0 +1,171 @@
+header {
+   margin-bottom: 30px;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+footer {
+    margin-top: auto;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 2.5vw;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.85);
+    letter-spacing: 0.4rem;
+    font-style: normal;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: rgba(0, 0, 0, 0.85);
+    letter-spacing: 0.2rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+small {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:active {
+    opacity: .7;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding-left: 1.5vw;
+
+}
+
+.content {
+    padding: 2rem 5rem;
+}
+
+.home {
+    font-weight: bold;
+}
+
+.img-thumbnail {
+    border: 0;
+    transition: all 1s;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+.img-thumbnail:hover {
+    opacity: 0.8;
+}
+
+.img-thumbnail:hover .middle {
+    opacity: 1;
+}
+
+
+.gallery {
+    padding-bottom: 20px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container {
+    padding-bottom: 1rem;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 16px 32px;
+}
+
+.gallery img{
+    cursor: pointer;
+}
+
+.debug {
+    background-color: red;
+}
+
+@media screen and (max-width : 1920px){
+    .div-only-mobile{
+        visibility:hidden;
+    }
+}
+@media screen and (max-width : 906px){
+    .desk{
+        visibility:hidden;
+    }
+    .navbar {
+        visibility:visible;
+    }
+}
+
+#lightbox{
+    position: fixed;
+    display: none;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img{
+    height: 90%;
+}
