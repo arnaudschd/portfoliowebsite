@@ -73,7 +73,7 @@ a:active {
 
 .main {
     transition: margin-left .5s;
-    padding: 20px;
+    /*padding: 20px;*/
 }
 
 .vertical-text {
