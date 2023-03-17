@@ -83,11 +83,7 @@ a:active {
 
 }
 
-/*.content {
-    padding: 2rem 5rem;
-}*/
-
-.home {
+.selected {
     font-weight: bold;
 }
 
